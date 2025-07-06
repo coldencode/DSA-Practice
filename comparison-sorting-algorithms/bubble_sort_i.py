@@ -1,13 +1,11 @@
 def bubble_sort(list):
     end_boundary = len(list)
-    for _ in range(len(list)):
-        for j in range(0, end_boundary-1):
+    for i in range(len(list)):
+        for j in range(0, end_boundary-i-1):
             if list[j] > list[j+1]:
                 swap(list, j, j+1)
             else:
                 continue
-
-        end_boundary -=1
     
     return list
 
